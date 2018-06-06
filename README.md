@@ -6,19 +6,20 @@ This project uses reinforcement learning on stock market and agent tries to lear
 - [ ] PyTorch version
 - [ ] Code documents
 
-## Steps to reproduce DQN
+## How to use
+#### Steps to reproduce DQN
 1. cd `tensor-reinforcement`;
 2. Copy data from `https://drive.google.com/file/d/0B6ZrYxEMNGR-MEd5Ti0tTEJjMTQ/view and https://drive.google.com/file/d/0B6ZrYxEMNGR-Q0YwWWVpVnJ3YmM/view?usp=sharing` into `tensor-reinforcement` directory.
 3. Create a directory `saved_networks` inside `tensor_reinforcement` for saving networks.
 4. `python dqn_model.py`
 
-## Steps to reproduce PG
+#### Steps to reproduce PG
 1. cd `tensor-reinforcement`;
 2. Create a directory `saved_networks` inside `tensor_reinforcement` for saving networks.
 3. `python pg_model.py`
 
 
-## For the first iteration of the project
+## Introduction
 ### Policy network
 I will be starting with simple feed-forward network. Though, I am also inclined to use convolutional network reason, they do very well when the minor change in input should not change ouput. For example: In image recognizition, a small pixel values change doesn't meam image is changed. Intutively stocks numbers look same to me, a small change should not trigger a trade but again the problem here comes with normalization. With normalization the big change in number will be reduced to a very small in inputs hence its good to start with feed-forward.
 
